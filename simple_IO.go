@@ -20,6 +20,20 @@ func main() {
 	fmt.Scan(&age)                // Reading from the stdin into the age variable
 	fmt.Println("")               // Going to the next line by writing /n to the stdout
 
-	fmt.Print(name, age) // Writing to the stdout the values of name and
+	fmt.Println(name, age) // Writing to the stdout the values of name and
 	// age variables that you have entered
+
+	//Write a program that reads two integers, adds them up, and prints the result.
+	var firstInt, secondInt int
+
+	fmt.Print("Enter your integers: ")
+	fmt.Scan(&firstInt, &secondInt)
+
+	sum := firstInt + secondInt
+	fmt.Println(sum)
+
+	fmt.Print("First line\n\n")
+	fmt.Print("Third line\n\n")
+	fmt.Print("Fifth line")
+
 }
