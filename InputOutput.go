@@ -44,4 +44,22 @@ func main() {
 	fmt.Scan(&name)   // Reading from the stdin into the name variable
 	fmt.Println(name) // Writing to the stdout the name you've entered
 	// on the previous step
+
+	var foo int     // foo is 0
+	var str1 string // string is ""
+
+	fmt.Scan(&foo) // If you enter a string character, the scan function
+	// will leave the variable foo unchanged
+
+	fmt.Scan(&str1) // If you enter an integer, it will be taken as a string
+	// and assigned to the variable str
+
+	//Often we will need to read several values at once. In this case, we define variables and then pass their pointers to Scan, separating them by a comma. In the example below, if we enter Alex 21, it'll first break the string into Alex and 21. Then, it will assign the former to the name variable and the latter to the age variable. You play around with it, entering different strings:
+	var name1 string
+	var age string
+
+	fmt.Scan(&name1, &age) // Reading from the stdin into the name and age variables
+
+	fmt.Println(name1) // Writing to the stdout the value of the name variable
+	fmt.Println(age)   // Writing to the stdout the value of the age variable
 }
