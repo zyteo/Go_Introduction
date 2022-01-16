@@ -61,3 +61,12 @@ func main() {
 	//We will not dwell on this, but if you are still interested in it, you can refer to the documentation of the cmplx package.
 	//	https://pkg.go.dev/math/cmplx
 }
+
+func solve() uint8 {
+	// declare an uint8 type variable 'a' with a value of 10
+	// edit this line
+	var a uint8
+	a = 10
+
+	return a
+}
