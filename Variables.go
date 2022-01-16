@@ -78,4 +78,15 @@ func main() {
 	//	Write
 	//	Execute
 	//)
+
+	//Define a boolean variable bool with the name pizzaTime and the value true.
+	var pizzaTime bool = true
+	//	Define the chest variable of the string type and a value "gold".
+	var chest string = "gold"
+	const (
+		Winter = iota
+		Spring
+		Summer
+		Autumn
+	)
 }
