@@ -45,11 +45,12 @@ func main() {
 	var intReverse int
 	fmt.Println("Pass an integer, and I'll reverse it!")
 	fmt.Scan(&intReverse)
-	var reversed string
+	var reversed int
 
 	//	using a for loop, I create a new variable, and append to the variable as I get the new digits
-	for intReverse != 0 {
-		reversed = reversed + string(intReverse%10)
+	for intReverse > 0 {
+		//need to multiply by 10 to "insert" a digit to the right, if not without *10, it will just add the digits up which is not what we want
+		reversed = reversed*10 + (intReverse % 10)
 		intReverse = intReverse / 10
 	}
 	fmt.Println(reversed)
